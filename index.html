@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>7 Bible Mysteries Few People Can Truly Explain</title>
+  <meta name="description" content="A biblical ebook for readers who want to understand topics that awaken curiosity, reflection, and spiritual discernment." />
+  <style>
+    :root {
+      --bg: #0f0c0a;
+      --panel: #17120f;
+      --panel-2: #211810;
+      --text: #f3eadc;
+      --muted: #d3c1a8;
+      --gold: #c89a44;
+      --gold-2: #f0c977;
+      --line: rgba(240, 201, 119, 0.16);
+      --shadow: 0 18px 60px rgba(0, 0, 0, 0.35);
+      --radius: 24px;
+      --max: 1120px;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background:
+        radial-gradient(circle at top, rgba(200, 154, 68, 0.14), transparent 28%),
+        linear-gradient(180deg, #120e0b 0%, #0d0b09 100%);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    a { color: inherit; text-decoration: none; }
+    img { max-width: 100%; display: block; }
+
+    .container {
+      width: min(calc(100% - 32px), var(--max));
+      margin: 0 auto;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,0.03);
+      color: var(--gold-2);
+      padding: 10px 14px;
+      border-radius: 999px;
+      font-size: 14px;
+      letter-spacing: 0.02em;
+      backdrop-filter: blur(10px);
+    }
+
+    .btn-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-top: 28px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 16px 24px;
+      border-radius: 16px;
+      font-weight: 700;
+      transition: transform 0.18s ease, opacity 0.18s ease, box-shadow 0.18s ease;
+      box-shadow: var(--shadow);
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+      opacity: 0.96;
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, var(--gold-2), var(--gold));
+      color: #251809;
+    }
+
+    .btn-secondary {
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,0.03);
+      color: var(--text);
+    }
+
+    .hero {
+      padding: 72px 0 38px;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 36px;
+      align-items: center;
+    }
+
+    h1, h2, h3 { margin: 0 0 16px; line-height: 1.1; }
+    h1 { font-size: clamp(2.2rem, 5vw, 4.5rem); letter-spacing: -0.03em; }
+    h2 { font-size: clamp(1.6rem, 2.5vw, 2.4rem); }
+    h3 { font-size: 1.15rem; }
+
+    .sub {
+      font-size: clamp(1.02rem, 1.7vw, 1.25rem);
+      color: var(--muted);
+      max-width: 760px;
+    }
+
+    .hero-points {
+      margin-top: 22px;
+      display: grid;
+      gap: 12px;
+    }
+
+    .point {
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+      color: var(--muted);
+    }
+
+    .point strong { color: var(--text); }
+
+    .cover-card {
+      position: relative;
+      background: linear-gradient(180deg, rgba(255,255,255,0.05), rgba(255,255,255,0.02));
+      border: 1px solid var(--line);
+      border-radius: 28px;
+      padding: 18px;
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+
+    .cover-card::before {
+      content: "";
+      position: absolute;
+      inset: -20% auto auto -20%;
+      width: 220px;
+      height: 220px;
+      background: radial-gradient(circle, rgba(240,201,119,0.14), transparent 60%);
+      pointer-events: none;
+    }
+
+    .cover {
+      width: 100%;
+      aspect-ratio: 4 / 5.2;
+      object-fit: cover;
+      border-radius: 18px;
+      background: #2a2018;
+      border: 1px solid rgba(255,255,255,0.06);
+    }
+
+    .section {
+      padding: 34px 0;
+    }
+
+    .panel {
+      background: linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.02));
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 26px;
+      box-shadow: var(--shadow);
+    }
+
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    .card {
+      background: linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.015));
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      padding: 22px;
+    }
+
+    .card p, .panel p, .faq p, li {
+      color: var(--muted);
+    }
+
+    ul.clean {
+      list-style: none;
+      padding: 0;
+      margin: 16px 0 0;
+      display: grid;
+      gap: 12px;
+    }
+
+    ul.clean li {
+      position: relative;
+      padding-left: 28px;
+    }
+
+    ul.clean li::before {
+      content: "✦";
+      position: absolute;
+      left: 0;
+      top: 0;
+      color: var(--gold-2);
+    }
+
+    .chapters {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+      margin-top: 18px;
+    }
+
+    .chapter {
+      background: rgba(255,255,255,0.02);
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      padding: 18px;
+    }
+
+    .faq-wrap {
+      display: grid;
+      gap: 14px;
+      margin-top: 18px;
+    }
+
+    .faq {
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      padding: 18px;
+      background: rgba(255,255,255,0.02);
+    }
+
+    .cta-panel {
+      text-align: center;
+      padding: 38px 24px;
+      background:
+        radial-gradient(circle at top, rgba(240,201,119,0.14), transparent 40%),
+        linear-gradient(180deg, #1b140f 0%, #130f0c 100%);
+    }
+
+    .footer {
+      padding: 28px 0 54px;
+      color: #b89e78;
+      font-size: 14px;
+      text-align: center;
+    }
+
+    .price {
+      display: inline-flex;
+      align-items: baseline;
+      gap: 10px;
+      margin: 8px 0 12px;
+    }
+
+    .price strong {
+      font-size: clamp(2rem, 4vw, 3rem);
+      color: var(--gold-2);
+      line-height: 1;
+    }
+
+    .small {
+      color: #c9b18d;
+      font-size: 14px;
+    }
+
+    @media (max-width: 920px) {
+      .hero-grid,
+      .grid-3,
+      .chapters {
+        grid-template-columns: 1fr;
+      }
+
+      .hero {
+        padding-top: 44px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!--
+    EDIT ONLY THESE FIELDS TO CUSTOMIZE FAST:
+    1) HOTMART_LINK
+    2) BOOK_COVER
+    3) PRICE_TEXT
+  -->
+  <script>
+    const HOTMART_LINK = "https://pay.hotmart.com/N105394011M";
+    const BOOK_COVER = "https://raw.githubusercontent.com/pauloxphp/ebook-bible/refs/heads/main/euabible.png";
+    const PRICE_TEXT = "$5.99";
+  </script>
+
+  <div class="hero">
+    <div class="container hero-grid">
+      <div>
+        <div class="badge">Digital ebook • Instant access</div>
+        <h1>7 Bible Mysteries Few People Can Truly Explain</h1>
+        <p class="sub">Discover biblical topics that awaken curiosity, reflection, and deep questions in a clear, organized, and easy-to-follow ebook.</p>
+        <div class="hero-points">
+          <div class="point"><span>✦</span><div><strong>Simple reading.</strong> <span>Clear content for readers who want to study without complicated language.</span></div></div>
+          <div class="point"><span>✦</span><div><strong>High-interest topics.</strong> <span>Revelation, the mark of the beast, the antichrist, fallen angels, life after death, and more.</span></div></div>
+          <div class="point"><span>✦</span><div><strong>Great for personal study.</strong> <span>A resource designed for individual reading, reflection, and deeper biblical understanding.</span></div></div>
+        </div>
+        <div class="btn-row">
+          <a class="btn btn-primary hotmart-link" href="#" target="_blank" rel="noopener noreferrer">Get the ebook now</a>
+          <a class="btn btn-secondary" href="#content">See what’s inside</a>
+        </div>
+      </div>
+
+      <div class="cover-card">
+        <img class="cover" id="bookCover" alt="Ebook cover" />
+      </div>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="container grid-3">
+      <div class="card">
+        <h3>Why this ebook may be for you</h3>
+        <ul class="clean">
+          <li>You want to better understand biblical topics that raise deep questions.</li>
+          <li>You are looking for a direct, organized, and easy-to-read resource.</li>
+          <li>You want to grow in faith with greater clarity and reverence.</li>
+          <li>You prefer content you can read at your own pace.</li>
+        </ul>
+      </div>
+
+      <div class="card" id="content">
+        <h3>What you will find inside</h3>
+        <div class="chapters">
+          <div class="chapter">Who the Nephilim were</div>
+          <div class="chapter">What the mark of the beast is</div>
+          <div class="chapter">Who the antichrist is</div>
+          <div class="chapter">What happens after death</div>
+          <div class="chapter">The subject of fallen angels</div>
+          <div class="chapter">The true meaning of Revelation</div>
+          <div class="chapter">The signs of Jesus’ return</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>Who this is for</h3>
+        <p>For Christians, Bible readers, and anyone who wants to better understand biblical themes that spark curiosity, reflection, and serious questions.</p>
+        <div class="price">
+          <span class="small">Current offer</span>
+          <strong id="priceValue"></strong>
+        </div>
+        <a class="btn btn-primary hotmart-link" href="#" target="_blank" rel="noopener noreferrer">Get the ebook now</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container panel">
+      <h2>Frequently asked questions</h2>
+      <div class="faq-wrap">
+        <div class="faq">
+          <h3>How do I receive the ebook?</h3>
+          <p>After your purchase, access is released inside the platform used for the sale.</p>
+        </div>
+        <div class="faq">
+          <h3>Is this a digital product?</h3>
+          <p>Yes. This is a digital ebook designed for quick access and reading on your phone, tablet, or computer.</p>
+        </div>
+        <div class="faq">
+          <h3>Is it good for personal study?</h3>
+          <p>Yes. The content was organized for individual reading, reflection, and deeper study.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container panel cta-panel">
+      <h2>Deepen your biblical understanding with more clarity</h2>
+      <p class="sub" style="margin: 0 auto;">Click the button below and get instant access to your ebook.</p>
+      <div class="btn-row" style="justify-content: center;">
+        <a class="btn btn-primary hotmart-link" href="#" target="_blank" rel="noopener noreferrer">Get the ebook now</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">Independent page created to promote the ebook.</div>
+  </footer>
+
+  <script>
+    document.title = "7 Bible Mysteries Few People Can Truly Explain";
+    document.querySelector('meta[name="description"]').setAttribute('content', "A biblical ebook for readers who want to understand topics that awaken curiosity, reflection, and spiritual discernment.");
+    document.getElementById('bookCover').src = BOOK_COVER;
+    document.getElementById('bookCover').alt = '7 Bible Mysteries Few People Can Truly Explain';
+    document.getElementById('priceValue').textContent = PRICE_TEXT;
+    document.querySelectorAll('.hotmart-link').forEach(el => {
+      el.href = HOTMART_LINK;
+    });
+  </script>
+</body>
+</html>
